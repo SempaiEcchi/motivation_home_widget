@@ -22,5 +22,4 @@ flutter:
       android:
         package: es.antonborri.home_widget
         pluginClass: HomeWidgetPlugin
-      ios:
-        pluginClass: HomeWidgetPlugin
+

@@ -1,16 +1,21 @@
 package es.antonborri.home_widget
 
+import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.widget.RemoteViews
 import androidx.annotation.NonNull
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
+import kotlin.random.Random
 
 
 /** HomeWidgetPlugin */
@@ -90,3 +95,4 @@ class HomeWidgetPlugin : FlutterPlugin, MethodCallHandler {
         fun getData(context: Context): SharedPreferences = context.getSharedPreferences(PREFERENCES, Context.MODE_PRIVATE)
     }
 }
+
